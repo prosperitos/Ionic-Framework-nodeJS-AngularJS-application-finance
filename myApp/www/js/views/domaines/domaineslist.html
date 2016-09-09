@@ -1,0 +1,15 @@
+<ion-view title="Domaines" onscroll="true">
+  <ion-nav-bar class="bar-dark">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+  </ion-nav-bar>
+
+  <ion-content padding="true" class="back">
+    <ul class="list" ng-repeat="domaine in domaines">
+      <li class="item"><a href="#/actes/{{domaine.Code}}">{{domaine.Nom}} </a>    </li>
+    </ul>
+
+
+  </ion-content>
+
+</ion-view>

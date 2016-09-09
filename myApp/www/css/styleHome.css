@@ -1,0 +1,61 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto); /* FREE GOOGLE FONT */
+
+.back{
+  background:#eeeeee;
+}
+
+.set-radius-zero {
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+
+.content-wrapper {
+  margin-top: 40px;
+  min-height: 482px;
+  padding-bottom: 60px;
+}
+
+
+.bk-clr-one {
+  background-color: royalblue;
+}
+
+.bk-clr-two {
+  background-color: green;
+}
+
+.bk-clr-three {
+  background-color: #119c7e;
+}
+
+.bk-clr-four {
+  background-color: greenyellow;
+}
+
+.dashboard-div-icon {
+  height: 75px;
+  width: 75px;
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+.dashboard-div-wrapper {
+  border-radius: 5px;
+  text-align: center;
+  padding: 30px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.dashboard-div-wrapper >a{
+  color: #fff;
+}
+.dashboard-div-wrapper .progress {
+  height: 2px;
+}

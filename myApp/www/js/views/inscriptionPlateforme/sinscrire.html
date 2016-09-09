@@ -1,0 +1,46 @@
+<ion-view title="Inscription à la plateforme">
+  <ion-nav-bar class="bar-dark">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+  </ion-nav-bar>
+
+  <ion-content padding="true" class="back">
+    <div class="spacer" style="width: 300px; height: 26px;"></div>
+    <h1 style="color:darkslategrey;font-weight:600;text-align:center;" class=" ">Inscription</h1>
+    <div class="spacer" style="width: 300px; height: 26px;"></div>
+
+    <form class="list" name="form" novalidate> 
+
+      <label class="item item-input">
+      <span class="input-label ">Type</span>  
+      <select class="box" ng-options="type.type as type.type for type in Type" ng-model="Tiers.type">
+      <option value="">Sélectionnez le type</option>
+      </select>
+      </label>
+
+      <label class="item item-input "  name="Login">
+        <span class="input-label">Login</span>
+        <input type="text" placeholder="votre login" name="login" ng-model="Tiers.code" required>
+      </label>
+      <p ng-show="form.login.$invalid && !form.login.$pristine">Ce champ est obligatoire</p>
+
+      <label class="item item-input " name="password">
+        <span class="input-label">Mot de passe</span>
+        <input type="password" placeholder="votre mot de passe" name="password" ng-model="Tiers.CodeSecurite" required>
+      </label>
+      <p ng-show="form.password.$invalid && !form.password.$pristine">Ce champ est obligatoire</p>
+
+      <label class="item item-input "  name="Tel">
+        <span class="input-label">Téléphone</span>
+        <input type="number" maxlength="9" minlength="9" placeholder="votre numero de téléphone" name="tel" ng-model="Tiers.tel" required>
+      </label>
+      <p ng-show="form.tel.$invalid && !form.tel.$pristine">Ce champ est obligatoire</p>
+
+    </form>
+
+    <a style="border-radius:7px 7px 7px 7px;" class=" button button-dark  button-block icon-left ion-log-in "ng-disabled="form.$invalid" ng-click="inscrire(Tiers)">Valider</a>
+    <a style="border-radius:7px 7px 7px 7px;" class=" button button-royal  button-block icon-left ion-log-in " ng-click="annuler()">Annuler</a>
+
+  </ion-content>
+</ion-view>
+

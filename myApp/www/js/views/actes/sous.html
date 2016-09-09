@@ -1,0 +1,11 @@
+<ion-view title="Sous Actes" onscroll="true">
+  <ion-nav-bar class="bar-dark">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-content padding="true" class="back">
+    <ul class="list" ng-repeat="at in sousacte">
+      <li class="item"><a href="#/actes/view/{{at.Nom}}"> {{at.Nom}}</a></li>
+    </ul>
+  </ion-content>
+</ion-view>

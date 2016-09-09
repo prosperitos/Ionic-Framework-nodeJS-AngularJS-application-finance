@@ -1,0 +1,54 @@
+<ion-view title="Information acte" onscroll="true">
+  <ion-nav-bar class="bar-dark">
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-content padding="false" class="back couleur">
+    <ul class="list" ng-repeat="ate in acteproprietaire">
+      <li class="item centre"> Information Tiers Acte</li>
+      <li class="item centre"> Nom           : {{ate.Nom}} </li>
+      <li class="item centre"> Date Transfert: {{ate.Transfert}} </li>
+      <li class="item centre"> Date Regle    : {{ate.Regle}} </li> 
+      <li class="item centre"> Type          : {{ate.Type}} </li>
+      <li class="item centre"> TauxTVA       : {{ate.TauxTVA}} </li> 
+    </ul>
+
+    <ul class="list" ng-repeat="inf in infos">
+      <li class="item centre"> Information Tiers</li>
+      <li class="item centre"> Nature        : {{inf.Nature}} </li>
+      <li class="item centre"> Numeros Infos : {{inf.NumeroInfo}} </li>
+      <li class="item centre"> Date Regle    : {{inf.Type}} </li> 
+      <li class="item centre"> Type          : {{inf.Valeur}} </li>
+      <li class="item centre"> TauxTVA       : {{inf.NumeroActe}} </li> 
+    </ul>
+
+    <ul class="list" ng-repeat="fin in finance">
+      <li class="item centre"> Finance Tiers</li>
+      <li class="item centre"> Base        : {{fin.Base}} </li>
+      <li class="item centre"> Nom         : {{fin.Nom}} </li>
+      <li class="item centre"> Nombre      : {{fin.Nombre}} </li> 
+      <li class="item centre"> PrixUnitaire: {{fin.PrixUnitaire}} </li>
+      <li class="item centre"> Type       : {{fin.Type}} </li> 
+    </ul>
+
+    <ul class="list" ng-repeat="ob in objet">
+      <li class="item centre"> Finance Tiers</li>
+      <li class="item centre"> Type        : {{ob.Type}} </li>
+      <li class="item centre"> Nom         : {{ob.Nom}} </li>
+      <li class="item centre"> Prix unitaire vente: {{ob.PrixUnitaireVente}} </li> 
+      <li class="item centre"> Prix unitaire achat: {{ob.PrixUnitaireAchat}} </li>
+      <li class="item centre"> Nombre de colis       : {{ob.NombreColis}} </li> 
+    </ul>
+
+     <ul class="list" ng-repeat="doc in document">
+      <li class="item centre"> Documents Tiers</li>
+      <li class="item centre"> Nature        : {{doc.Nature}} </li>
+      <li class="item centre"> Nom         : {{doc.Nom}} </li>
+      <li class="item centre"> Nom Complet: {{doc.NomComplet}} </li> 
+      <li class="item centre"> Type lien: {{doc.typelien}} </li>
+      <li class="item centre"> Numero lien       : {{doc.numerolien}} </li> 
+    </ul>
+
+  </ion-content>
+
+</ion-view>
